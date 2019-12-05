@@ -1,0 +1,9 @@
+pyramid
+pyramid_chameleon
+waitress
+deform
+
+[dev]
+pyramid_debugtoolbar
+pytest
+webtest

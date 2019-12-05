@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User: View</title>
+</head>
+<body>
+<h1>Users</h1>
+
+<a href="${request.route_url('user_add')}">Add
+    User</a>
+<ul>
+    <li tal:repeat="user users">
+        <a href="${request.route_url('userpage_view', uid=user.uid)}">
+                ${user.firstName}
+        </a>
+    </li>
+</ul>
+</body>
+</html>

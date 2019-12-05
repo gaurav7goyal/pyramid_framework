@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>userDetails: View</title>
+</head>
+<body>
+<a href="${request.route_url('user_view')}">
+    Up
+</a> |
+<a href="${request.route_url('user_edit', uid=user.uid)}">
+    Edit
+</a>
+
+<table>
+	<tr>
+		<th>User Id</th>
+		<th>FirstName</th>
+		<th>Last Name</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>${user.uid}</td>
+		<td>${user.firstName}</td>
+		<td>${user.lastName}</td>
+		<td>${user.age}</td>
+	</tr>
+</table>
+</body>
+</html>
