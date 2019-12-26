@@ -1,0 +1,30 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+ <link href="{{request.static_url('login_application:static/css/loginform.css')}}" rel="stylesheet">
+	<div class="container ">
+	    <div class="row">
+	        <div class="form_bg">
+	            <form>
+	                 <h2 class="text-center">Login Page</h2>
+	                <br/>
+	                <div class="form-group">
+	                    <input type="email" class="form-control" id="email" placeholder="Email">
+	                </div>
+	                <div class="form-group">
+	                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+	                
+	                </div>
+	                    <br/>
+	                <div class="align-center">
+	                <button type="submit" class="btn btn-default" id="login">Login</button>
+	                <br>
+	                	<a  href="{{request.route_url('register') }}">create a Account </a>
+	                </div>
+	               
+	            </form>
+	        </div>
+	    </div>
+	</div>
+
+{% endblock content %}

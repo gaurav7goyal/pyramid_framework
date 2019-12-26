@@ -1,0 +1,3 @@
+[run]
+source = user_application
+omit = user_application/test*

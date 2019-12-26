@@ -1,0 +1,15 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+ <link href="{{request.static_url('login_application:static/css/loginform.css')}}" rel="stylesheet">
+	
+	    <div class="row">
+	        <div class="form_bg">
+	           <h1>Login Form</h1>
+
+    			{{rendered_form|safe}}
+	        </div>
+	    </div>
+
+
+{% endblock content %}
