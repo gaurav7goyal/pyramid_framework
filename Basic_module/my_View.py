@@ -3,7 +3,7 @@ from pyramid.response import Response
 
 class model(object):
 	'''
-	modle class
+	modle class name
 	'''
 	def __init__(self,request):
 		pass
